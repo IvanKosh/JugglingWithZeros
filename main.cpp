@@ -27,8 +27,8 @@ string toBoolSequence(string line) {
     return result;
 }
 
-unsigned int boolStrToInt(string str) {
-    unsigned int result = 0;
+long boolStrToInt(string str) {
+    long result = 0;
     for (int i = 0; i < str.length(); i++) {
         if (str[i] == '1') {
             result = result |= 1;
